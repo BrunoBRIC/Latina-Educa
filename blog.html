@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Gratuita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #f5f7fa;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .trial-container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 40px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            color: #1a73e8;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .features {
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8faff;
+            border-radius: 12px;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .feature-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .feature-item::before {
+            content: '✓';
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 24px;
+            height: 24px;
+            background: #1a73e8;
+            color: white;
+            border-radius: 50%;
+            margin-right: 12px;
+            font-size: 14px;
+        }
+
+        .trial-form {
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group input, .form-group select {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e1e5ea;
+            border-radius: 8px;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus, .form-group select:focus {
+            border-color: #1a73e8;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(26, 115, 232, 0.1);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+        }
+
+        .submit-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .terms {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .terms a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .terms a:hover {
+            text-decoration: underline;
+        }
+
+        .success-message {
+            display: none;
+            background: #4caf50;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .trial-container {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="trial-container">
+        <div class="header">
+            <h1>Prueba Gratuita por 14 días</h1>
+            <p>Descubre todas las funciones sin compromiso</p>
+        </div>
+
+        <div class="features">
+            <div class="feature-item">Acceso completo a todas las funciones</div>
+            <div class="feature-item">Soporte técnico personalizado</div>
+            <div class="feature-item">Sin necesidad de tarjeta de crédito</div>
+            <div class="feature-item">Cancela en cualquier momento</div>
+        </div>
+
+        <form class="trial-form" id="trialForm">
+            <div class="form-group">
+                <label for="name">Nombre completo</label>
+                <input type="text" id="name" required placeholder="Ingresa tu nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correo electrónico empresarial</label>
+                <input type="email" id="email" required placeholder="nombre@empresa.com">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Empresa</label>
+                <input type="text" id="company" required placeholder="Nombre de tu empresa">
+            </div>
+
+            <div class="form-group">
+                <label for="size">Tamaño de la empresa</label>
+                <select id="size" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="1-10">1-10 empleados</option>
+                    <option value="11-50">11-50 empleados</option>
+                    <option value="51-200">51-200 empleados</option>
+                    <option value="201+">201+ empleados</option>
+                </select>
+            </div>
+            <div class="form-group">
+              <label for="size">Producto</label>
+              <select id="size" required>
+                  <option value="">Selecciona una opción</option>
+                  <option value="1-10">Bilioteca</option>
+                  <option value="11-50">Plataforma</option>
+              </select>
+          </div>
+            <button type="submit" class="submit-btn">Comenzar prueba gratuita</button>
+        </form>
+
+        <div class="terms">
+            Al registrarte, aceptas nuestros <a href="#">Términos de servicio</a> y 
+            <a href="#">Política de privacidad</a>
+        </div>
+
+        <div class="success-message">
+            ¡Gracias por registrarte! Te hemos enviado un correo con los detalles de acceso.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('trialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const button = this.querySelector('button');
+            button.disabled = true;
+            button.textContent = 'Procesando...';
+
+            // Simular envío del formulario
+            setTimeout(() => {
+                const successMessage = document.querySelector('.success-message');
+                successMessage.style.display = 'block';
+                this.style.display = 'none';
+
+                // Resetear formulario
+                this.reset();
+                
+                // Ocultar mensaje después de 5 segundos
+                setTimeout(() => {
+                    successMessage.style.display = 'none';
+                    this.style.display = 'block';
+                    button.disabled = false;
+                    button.textContent = 'Comenzar prueba gratuita';
+                }, 5000);
+            }, 1500);
+        });
+
+        // Validación de correo empresarial
+        document.getElementById('email').addEventListener('input', function() {
+            const email = this.value.toLowerCase();
+            const commonDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com'];
+            const domain = email.split('@')[1];
+            
+            if (domain && commonDomains.includes(domain)) {
+                this.setCustomValidity('Por favor, utiliza tu correo empresarial');
+            } else {
+                this.setCustomValidity('');
+            }
+        });
+    </script>
+</body>
+</html>

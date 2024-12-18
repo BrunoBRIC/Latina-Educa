@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
+    <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
+    <meta name="author" content="templateninja">
+    <title>Construction</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:300,500" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/Pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/plugins/html5shiv.min.js"></script>
+      <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="home">
+
+    <!-- begin:header -->
+    <div class="header header-page">
+      <!-- begin:topbar -->
+      <div id="topbar" class="topbar topbar-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="nav-utility">
+                <span class="nav-item">A stylish Bootstrap theme for construction companies</span>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-8 -->
+            <div class="col-sm-4 hidden-xs">
+              <div class="nav-utility nav-right">
+                <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-4 -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+      <!-- end:topbar -->
+
+      <!-- begin:site-navigation -->
+      <div class="site-header-affix-wrapper">
+        <header id="masthead" class="site-header header-dark" role="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="site-branding">
+                  <h1 class="site-title title-image"><a href="index-2.html" rel="home"><img src="assets/img/Captura_de_pantalla_2024-12-03_184733-removebg-preview.png" alt="construction business" class="img-responsive"></a></h1>
+                </div><!-- .site-branding -->
+              </div><!-- .col-sm-3 -->
+
+              <div class="col-sm-9">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                  <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false"><span class="pe-7s-menu"></span><span class="sr-only">Primary Menu</span></button>
+
+                  <div class="menu-testing-menu-container">
+                    <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                      <li class="menu-item current-menu-item"><a href="index.html">INICIO</a></li>
+                      
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="Nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">SERVICIOS</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item current-menu-item"><a href="Plataforma.html">PLATAFORMA</a></li>
+                          <li class="menu-item"><a href="Portal.html">PAGINA WEB</a></li>
+                          <li class="menu-item"><a href="Biblioteca.html">REPOSITORIO DE BIBLIOTECA</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item"><a href="Partners.html">Projects</a></li>
+                      <li class="menu-item"><a href="contact.html">Contact</a></li>
+                      <li class="menu-item"><a href="blog.html">PRUEBA GRATUITA</a></li>
+                      
+                    </ul>
+                  </div>
+                </nav><!-- #site-navigation -->
+              </div><!-- .col-sm-9 -->
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </header><!-- #masthead -->
+      </div><!-- .site-header-affix-wrapper -->
+      <!-- end:site-navigation -->
+    </div><!-- #header -->
+    <!-- end:header -->
+
+    <!-- begin:main-title -->
+
+    <!-- end:main-title -->
+    <style>
+      /* Variables de color */
+      :root {
+        --primary-color: #D36935;
+        --secondary-color: #333;
+        --text-color: #4A4A4A;
+        --background-color: #5f5f5f;
+        --highlight-color: #FF944D;
+        --white-color: #919191;
+        --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        --font-main: 'Roboto', sans-serif;
+        --font-heading: 'Poppins', sans-serif;
+      }
+    
+      .container-partner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        background-color: var(--background-color);
+        padding: 60px 60px;
+        border-radius: 20px;
+        max-width: 1400px;
+        margin: 0 auto;
+        box-shadow: var(--box-shadow);
+        overflow: hidden;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 1.5s ease;
+      }
+    
+      .container-partner.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    
+      .content-partner {
+        flex: 1;
+        padding-left: 30px;
+        margin-right: 30px;
+      }
+    
+      .content-partner h2 {
+        font-size: 4rem;
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+        font-weight: 800;
+        font-family: var(--font-heading);
+        line-height: 1.2;
+      }
+    
+      .content-partner p {
+        font-size: 1.8rem;
+        color: var(--text-color);
+        margin-bottom: 18px;
+        line-height: 1.6;
+        font-weight: 400;
+        font-family: var(--font-main);
+      }
+    
+      .content-partner button {
+        background-color: var(--primary-color);
+        color: var(--white-color);
+        padding: 15px 35px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        font-family: var(--font-heading);
+        cursor: pointer;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        transition: all 0.4s ease;
+      }
+    
+      .content-partner button:hover {
+        background-color: var(--highlight-color);
+        transform: scale(1.05);
+      }
+    
+      .image-frame {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        max-width: 450px;
+        transition: transform 0.6s ease;
+      }
+    
+      .image-frame img {
+        width: 100%;
+        border-radius: 20px;
+        box-shadow: var(--box-shadow);
+      }
+    
+      .image-frame::before {
+        content: '';
+        position: absolute;
+        top: -15px;
+        right: -15px;
+        bottom: -15px;
+        left: -15px;
+        border: 5px solid var(--primary-color);
+        border-radius: 20px;
+        z-index: -1;
+        transform: rotate(3deg);
+      }
+    
+      /* Hover en la imagen */
+      .image-frame:hover {
+        transform: scale(1.05);
+      }
+      .uno {
+    font-size: 4.5rem; /* Tamaño de letra para el título */
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .dos {
+    font-size: 2.2rem; /* Tamaño de letra para el párrafo */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+    </style>
+    
+    <div class="container-partner">
+      <div class="content-partner">
+        <h2>Programa Partners Latina Educa</h2>
+        <br>
+        <p>Lidera el cambio en la educación y aumenta tus ingresos.</p>
+        <p>Obtén excelentes oportunidades de comisionar vendiendo el software educativo líder en Latinoamérica.</p>
+        <button>¡Afíliate ahora!</button>
+      </div>
+      <div class="">
+        <img class="image-frame" src="assets/img/Captura_de_pantalla_2024-12-03_093854-removebg-preview.png" alt="Imagen del Programa Partner Q10">
+      </div>
+    </div>
+    
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const container = document.querySelector('.container-partner');
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          {
+            threshold: 0.2,
+            rootMargin: "0px 0px -100px 0px"
+          }
+        );
+    
+        observer.observe(container);
+      });
+    </script>
+    
+    
+     <!-- begin:site-main -->
+
+     <style>
+      /* Variables de color */
+      :root {
+        --primary-color: #D36935;
+        --secondary-color: #333;
+        --text-color: #666;
+        --background-color: #E5E5E5; /* Nuevo color de fondo */
+        --white-color: #FFFFFF;
+        --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    
+      .container147 {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 20px;
+        background-color: #ffffff;
+      }
+    
+      .why-partner147 {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 40px;
+      }
+    
+      .why-partner147 h2 {
+        font-size: 2.9rem;
+        color: var(--secondary-color);
+        margin-bottom: 0;
+      }
+    
+      .benefits147 {
+        display: flex;
+        gap: 40px;
+      }
+    
+      .benefit-items147 {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    
+      .benefit-item147 {
+        background-color: var(--white-color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        text-align: left;
+      }
+    
+      .benefit-item147 img {
+        width: 62px;
+        height: 62px;
+      }
+    
+      .benefit-content147 h3 {
+        font-size: 1.65rem;
+        color: var(--primary-color);
+        margin: 0 0 8px;
+      }
+    
+      .benefit-content147 p {
+        font-size: 1.4rem;
+        color: var(--text-color);
+        margin: 0;
+      }
+    
+      .video-section147 {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .video-section147 img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+      }
+    </style>
+    
+    <div class="container147">
+      <div class="why-partner147">
+        <h2>¿Por qué ser un Partner Latina Educa?</h2>
+      </div>
+      <div class="benefits147">
+        <div class="benefit-items147">
+          <div class="benefit-item147">
+            <img src="assets/img/Captura_de_pantalla_2024-12-03_094354-removebg-preview.png" alt="Crecimiento económico">
+            <div class="benefit-content147">
+              <h3>Crecimiento económico</h3>
+              <p>Mejora tus ingresos y beneficios al aumentar tu alcance en nuevos mercados.</p>
+            </div>
+          </div>
+          <div class="benefit-item147">
+            <img src="assets/img/Captura_de_pantalla_2024-12-03_094402-removebg-preview.png" alt="Red de contactos">
+            <div class="benefit-content147">
+              <h3>Red de contactos</h3>
+              <p>Crece tu comunidad profesional ofreciéndole a tus clientes soluciones líderes en gestión educativa.</p>
+            </div>
+          </div>
+          <div class="benefit-item147">
+            <img src="assets/img/Captura_de_pantalla_2024-12-03_094409-removebg-preview.png" alt="Soporte especializado">
+            <div class="benefit-content147">
+              <h3>Soporte especializado</h3>
+              <p>Obtén acceso a recursos, soporte personalizado y satisface las necesidades de tus clientes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="video-section147">
+          <img src="path/to/video-thumbnail.jpg" alt="Video de Partner Q10">
+        </div>
+      </div>
+    </div>
+    
+      <!-- begin:site-main -->
+      <style>
+
+
+        .banner34 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(135deg, #0C1EFF 50%, #64F1FA 100%);
+            color: white;
+            padding: 3.5rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 46, 91, 0.15);
+            margin: 2rem;
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+            width: calc(100% - 4rem);
+        }
+
+        .banner34::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 100%;
+
+            clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+            transition: transform 0.3s ease;
+        }
+
+        .banner34:hover::before {
+            transform: translateX(10px);
+        }
+
+        .banner-content34 {
+            max-width: 55%;
+            z-index: 2;
+        }
+
+        .banner-content34 h1 {
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            margin: 0 0 1rem;
+            line-height: 1.2;
+            font-weight: 700;
+        }
+
+        .banner-content34 p {
+            margin: 0.8rem 0;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            color: #e6f1ff;
+            line-height: 1.6;
+        }
+
+        .banner-content34 .button34 {
+            display: inline-flex;
+            align-items: center;
+            background-color: #dadada9d;
+            color: white; /* Texto blanco */
+            text-decoration: none;
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .banner-content34 .button34:hover {
+            background-color: #058a94;
+            transform: translateY(-2px);
+        }
+
+        .banner-image34 {
+            max-width: 40%;
+            z-index: 2;
+        }
+
+          .banner-image34 img {
+          max-width: 100%;
+          height: auto;
+          border-radius: 16px; /* Propiedad corregida */
+          box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      }
+
+        .modal34 {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            backdrop-filter: blur(5px);
+        }
+
+        .modal-content34 {
+            position: relative;
+            background-color: white;
+            margin: 5% auto;
+            padding: 2rem;
+            width: 90%;
+            max-width: 500px;
+            border-radius: 16px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            animation: modalSlideIn34 0.3s ease-out;
+        }
+
+        .close-button34 {
+            position: absolute;
+            right: 1.5rem;
+            top: 1.5rem;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+
+        .close-button34:hover {
+            color: #000;
+        }
+
+        .form-group34 {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group34 label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .form-group34 input,
+        .form-group34 textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group34 input:focus,
+        .form-group34 textarea:focus {
+            outline: none;
+            border-color: #4CAF50;
+        }
+
+        .submit-button34 {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-button34:hover {
+            background-color: #45a049;
+        }
+
+        @keyframes modalSlideIn34 {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .banner34 {
+                flex-direction: column;
+                text-align: center;
+                padding: 2.5rem 2rem;
+            }
+
+            .banner-content34,
+            .banner-image34 {
+                max-width: 100%;
+            }
+
+            .banner-content34 {
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner34">
+        <div class="banner-content34">
+            <h1>¿Necesita ayuda?</h1>
+            <br>
+            <p>Acuda al soporte para Partners</p>
+            <p>El equipo Sophos Partner Care está a su disposición 24/7 para ayudarle con los presupuestos, las solicitudes NFR y el portal.</p>
+            <br>
+            <a href="#" class="button34" onclick="openModal34()">Contactar con Partner Care</a>
+        </div>
+        <div class="banner-image34">
+            <img src="assets/img/Captura de pantalla 2024-12-03 114649.png" alt="Soporte Partner Care">
+        </div>
+    </div>
+
+    <!-- Modal Form -->
+    <div id="contactModal34" class="modal34">
+        <div class="modal-content34">
+            <span class="close-button34" onclick="closeModal34()">&times;</span>
+            <h2>Contactar con Partner Care</h2>
+            <form id="contactForm34" onsubmit="handleSubmit34(event)">
+                <div class="form-group34">
+                    <label for="name34">Nombre completo</label>
+                    <input type="text" id="name34" name="name34" required>
+                </div>
+                <div class="form-group34">
+                    <label for="email34">Correo electrónico</label>
+                    <input type="email" id="email34" name="email34" required>
+                </div>
+                <div class="form-group34">
+                    <label for="company34">Empresa</label>
+                    <input type="text" id="company34" name="company34" required>
+                </div>
+                <div class="form-group34">
+                    <label for="message34">Mensaje</label>
+                    <textarea id="message34" name="message34" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-button34">Enviar mensaje</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal34 = document.getElementById('contactModal34');
+
+        function openModal34() {
+            modal34.style.display = 'block';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal34() {
+            modal34.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        window.onclick = function(event) {
+            if (event.target == modal34) {
+                closeModal34();
+            }
+        }
+
+        function handleSubmit34(event) {
+            event.preventDefault();
+            alert('Formulario enviado con éxito');
+            closeModal34();
+        }
+    </script>
+      <!-- begin:site-main -->
+
+           
+      <!-- begin:site-main -->
+      <style>
+        /* Variables de color */
+        :root {
+          --primary-color: #FF6F00;
+          --secondary-color: #333;
+          --text-color: #666;
+          --background-color: #F7F7F7;
+          --white-color: #FFFFFF;
+          --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          --button-bg-color: #333;
+          --button-text-color: #FFFFFF;
+        }
+      
+        .container369 {
+          width: 100%;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 40px 20px;
+          text-align: center;
+        }
+      
+        .header369 {
+          margin-bottom: 40px;
+        }
+      
+        .header369 h2 {
+          font-size: 3.5rem; /* Aumentado */
+          color: var(--secondary-color);
+          margin-bottom: 12px;
+        }
+      
+        .header369 p {
+          font-size: 1.75rem; /* Aumentado */
+          color: var(--text-color);
+        }
+      
+        .options369 {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          gap: 24px;
+        }
+      
+        .option369 {
+          background-color: var(--white-color);
+          padding: 24px;
+          border-radius: 10px;
+          box-shadow: var(--box-shadow);
+          text-align: left;
+        }
+      
+        .option-header369 {
+          margin-bottom: 12px;
+        }
+      
+        .option-description369,
+        .option-highlight369 {
+          font-size: 1.5rem; /* Aumentado */
+          color: var(--text-color);
+          margin-bottom: 20px;
+        }
+      
+        .option-highlight369 {
+          font-weight: bold;
+          color: var(--secondary-color);
+        }
+      
+        .option-content369 {
+          background-color: #F0F0F0;
+          padding: 20px;
+          border-radius: 8px;
+          margin-bottom: 20px;
+          font-size: 1.5rem; /* Aumentado */
+          color: var(--text-color);
+        }
+      
+        .option-content369 p {
+          margin: 0 0 10px;
+          display: flex;
+          align-items: center;
+        }
+      
+        .option-content369 p::before {
+          content: "✔";
+          color: var(--primary-color);
+          margin-right: 10px;
+        }
+      
+        .price-button-container369 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 20px;
+        }
+      
+        .price369 {
+          font-size: 1.75rem; /* Aumentado */
+          color: var(--primary-color);
+          font-weight: bold;
+        }
+      
+        .button369 {
+          display: inline-block;
+          background-color: var(--button-bg-color);
+          color: var(--button-text-color);
+          padding: 12px 24px;
+          border-radius: 6px;
+          text-decoration: none;
+          font-size: 1.5rem; /* Aumentado */
+          text-align: center;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+      
+        .button369:hover {
+          background-color: #444;
+        }
+      </style>
+      
+      <div class="container369">
+        <div class="header369">
+          <h2>Formas de asociarte</h2>
+          <p>Elige el camino ideal para ti y tu negocio.</p>
+        </div>
+        <div class="options369">
+          <div class="option369">
+            <div class="option-header369">
+              <h3>Refiere</h3>
+            </div>
+            <div class="option-description369">Gana comisiones refiriendo a Educa Latina.</div>
+            <div class="option-highlight369">¡Nosotros nos encargamos del resto!</div>
+            <div class="option-content369">
+              <p>Obtén el 15% de comisión por cada venta efectiva.</p>
+            </div>
+            <div class="price-button-container369">
+              <p class="price369">Sin costo de suscripción</p>
+              <a href="#" class="button369">¡Afíliate ahora!</a>
+            </div>
+          </div>
+          <div class="option369">
+            <div class="option-header369">
+              <h3>Revende</h3>
+            </div>
+            <div class="option-description369">
+              Aumenta tus ingresos y adquiere descuentos, beneficios e incentivos exclusivos.
+            </div>
+            <div class="option-content369">
+              <p>30% de descuento de los servicios de Educa latina  para ventas nuevas y renovaciones.</p>
+              <p>Descuentos adicionales por volumen de facturación.</p>
+              <p>Acompañamiento y capacitación personalizados.</p>
+              <p>Administración de la facturación del cliente final.</p>
+            </div>
+            <div class="price-button-container369">
+              <a href="#" class="button369">¡Afíliate ahora!</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- begin:site-main -->
+         <!-- begin:site-main -->
+         <style>
+          :root {
+            --primary-color: #FF6F00;
+            --secondary-color: #333;
+            --text-color: #666;
+            --background-color: #F7F7F7;
+            --white-color: #FFFFFF;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+          }
+        
+          * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+          }
+        
+          .container258 {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+          }
+        
+          .image-section258 {
+            flex: 1 1 500px;
+            position: relative;
+            max-width: 100%;
+          }
+        
+          .image-section258 img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px var(--shadow-color);
+          }
+        
+          .image-border258 {
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border: 3px solid var(--primary-color);
+            border-radius: 12px;
+            z-index: -1;
+            transform: rotate(3deg);
+          }
+        
+          .text-section258 {
+            flex: 1 1 500px;
+            text-align: left;
+          }
+        
+          .text-section258 h2 {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 24px;
+          }
+        
+          .text-section258 h3 {
+            font-size: 1.8rem;
+            color: var(--secondary-color);
+            margin-bottom: 12px;
+          }
+        
+          .text-section258 p {
+            font-size: 1.2rem;
+            color: var(--text-color);
+            margin: 16px 0;
+          }
+        
+          .text-section258 .button258 {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: var(--white-color);
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-top: 24px;
+            transition: background-color 0.3s ease;
+          }
+        
+          .text-section258 .button258:hover {
+            background-color: #223d37e1;
+          }
+        
+          @media (max-width: 768px) {
+            .container258 {
+              padding: 60px 20px;
+              gap: 40px;
+            }
+        
+            .image-section258 img {
+              height: 400px;
+            }
+        
+            .text-section258 h2 {
+              font-size: 2.4rem;
+            }
+        
+            .text-section258 h3 {
+              font-size: 1.6rem;
+            }
+        
+            .text-section258 p {
+              font-size: 1.1rem;
+            }
+        
+            .text-section258 .button258 {
+              padding: 14px 28px;
+              font-size: 1.1rem;
+            }
+          }
+        </style>
+        
+        <div class="container258">
+          <div class="image-section258">
+            <img class="image-section258" src="assets/img/Captura de pantalla 2024-12-03 104106.png" alt="Partner Q10">
+          </div>
+          <div class="text-section258">
+            <h2>¿Quién puede ser Partner Latina Educa?</h2>
+            <div>
+              <h3>Empresas de Tecnología</h3>
+              <p>TI, Desarrollo, Hardware, Software y Soluciones Tecnológicas.</p>
+            </div>
+            <div>
+              <h3>Consultores Independientes</h3>
+              <p>De Tecnología y/o Educación.</p>
+            </div>
+            <a href="#" class="button258">Conoce más</a>
+          </div>
+        </div>
+        
+        <script>
+          // Smooth scrolling for "Conoce más" button
+          document.querySelector('.button258').addEventListener('click', (event) => {
+            event.preventDefault();
+            document.querySelector('html').scrollIntoView({ behavior: 'smooth' });
+          });
+        </script>
+        
+       <!-- begin:site-main -->
+       <!-- begin:site-main -->     
+       
+               <!-- begin:site-main -->
+               <!-- begin:site-main -->
+               <style>
+                :root {
+                  --primary-color:#4a6494;
+                  --secondary-color: #333;
+                  --background-color: #FAFAFA;
+                  --text-color: #666;
+                  --button-bg-color: #00557c;
+                  --button-text-color: #FFFFFF;
+                }
+            
+            
+                .container147852 {
+                  max-width: 1200px;
+                  margin: 0 auto;
+                  padding: 80px 20px;
+                }
+            
+                .header147852 {
+                  text-align: center;
+                  margin-bottom: 50px;
+                }
+            
+                .steps147852 {
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: center;
+                  gap: 40px;
+                }
+            
+                .step147852 {
+                  background-color: #FFFFFF;
+                  padding: 40px 30px;
+                  border-radius: 12px;
+                  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+                  width: 300px;
+                  text-align: center;
+                  background: url('assets/img/Captura\ de\ pantalla\ 2024-12-03\ 152807.png') no-repeat center center / cover ;
+                  
+                }
+            
+                .cta-section147852 {
+                  position: relative;
+                  background-color: var(--primary-color);
+                  color: var(--button-text-color);
+                  padding: 60px 20px;
+                  text-align: center;
+                  border-radius: 12px;
+                  overflow: hidden;
+                }
+            
+                .cta-section147852::before {
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: url('assets/img/Captura\ de\ pantalla\ 2024-12-10\ 153125.png') no-repeat center center / cover; /* Cambia con la URL de tu imagen */
+                  z-index: 0;
+                  opacity: 0.3;
+                }
+            
+                .cta-section147852 h2,
+                .cta-section147852 p,
+                .cta-section147852 a {
+                  position: relative;
+                  z-index: 1;
+                }
+            
+                .button147852 {
+                  display: inline-block;
+                  background-color: var(--button-bg-color);
+                  color: var(--button-text-color);
+                  padding: 16px 32px;
+                  border-radius: 8px;
+                  text-decoration: none;
+                  font-size: 1.9rem;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+                }
+            
+                .button147852:hover {
+                  background-color: #ffffff;
+                }
+            
+                /* Modal Styles */
+                .modal {
+                  display: none;
+                  position: fixed;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: rgba(0, 0, 0, 0.5);
+                  z-index: 1000;
+                  backdrop-filter: blur(5px);
+                }
+            
+                .modal-content {
+                  position: relative;
+                  background-color: white;
+                  margin: 5% auto;
+                  padding: 2rem;
+                  width: 90%;
+                  max-width: 500px;
+                  border-radius: 12px;
+                  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+                  animation: slideIn 0.3s ease-out;
+                }
+            
+                .close-button {
+                  position: absolute;
+                  right: 1.5rem;
+                  top: 1.5rem;
+                  font-size: 1.5rem;
+                  cursor: pointer;
+                  color: #666;
+                }
+            
+                .form-group {
+                  margin-bottom: 1.5rem;
+                }
+            
+                .form-group label {
+                  display: block;
+                  margin-bottom: 0.5rem;
+                  color: #333;
+                }
+            
+                .form-group input,
+                .form-group textarea {
+                  width: 100%;
+                  padding: 0.75rem;
+                  border: 1px solid #ccc;
+                  border-radius: 8px;
+                  font-size: 1rem;
+                }
+            
+                .submit-button {
+                  background-color: var(--primary-color);
+                  color: white;
+                  border: none;
+                  padding: 1rem 2rem;
+                  border-radius: 8px;
+                  font-size: 1rem;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+                }
+            
+            
+                @keyframes slideIn {
+                  from {
+                    transform: translateY(-20px);
+                    opacity: 0;
+                  }
+                  to {
+                    transform: translateY(0);
+                    opacity: 1;
+                  }
+                }
+                .uno {
+    font-size: 4.5rem; /* Tamaño de letra para el título */
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  .dos {
+    font-size: 2.2rem; /* Tamaño de letra para el párrafo */
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+              </style>
+            </head>
+            <body>
+              <div class="cta-section147852">
+                <h2 class="uno">¡Únete a la expansión de Educa Latina!</h2>
+                <br>
+                <p class="dos">Es momento de crecer juntos.</p>
+                <a href="#" class="button147852" onclick="openModal()">¡Afíliate ahora!</a>
+              </div>
+            
+              <div class="container147852">
+                <div class="header147852">
+                  <h2>Sé uno de nuestros Partners de Educa Latina en solo 3 pasos</h2>
+                </div>
+                <div class="steps147852">
+                  <div class="step147852">
+                    <h3>1. Infórmate</h3>
+                    <p>Ponte en contacto con nosotros e incrementa tus ingresos.</p>
+                  </div>
+                  <div class="step147852">
+                    <h3>2. Capacítate</h3>
+                    <p>Conoce a Educa Latina y desarrolla habilidades para venderlo.</p>
+                  </div>
+                  <div class="step147852">
+                    <h3>3. Gana</h3>
+                    <p>Obtén tu insignia Partner y gana por ventas y/o renovaciones.</p>
+                  </div>
+                </div>
+              </div>
+            
+              <div class="modal" id="modal">
+                <div class="modal-content">
+                  <span class="close-button" onclick="closeModal()">&times;</span>
+                  <h2>Formulario de Afiliación</h2>
+                  <form>
+                    <div class="form-group">
+                      <label for="name">Nombre completo</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Correo electrónico</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Mensaje</label>
+                      <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">Enviar</button>
+                  </form>
+                </div>
+              </div>
+            
+              <script>
+                const modal = document.getElementById('modal');
+            
+                function openModal() {
+                  modal.style.display = 'block';
+                }
+            
+                function closeModal() {
+                  modal.style.display = 'none';
+                }
+            
+                window.onclick = function (event) {
+                  if (event.target == modal) {
+                    closeModal();
+                  }
+                };
+              </script>
+              
+               <!-- begin:site-main -->      
+       <!-- begin:site-main -->
+    <div class="site-main">
+      <!-- begin:content-section -->
+      <div class="content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="entry-content">
+                <ul class="work-filter">
+                  <li class="active" data-filter="*"><a href="#">TODOS</a></li>
+                  <li data-filter=".buildings"><a href="#buildings">Biblioteca</a></li>
+                  <li data-filter=".interior-design"><a href="#interior-design">Plataforma</a></li>
+                  <li data-filter=".house-renovation"><a href="#house-renovation">Pagina web</a></li>
+                </ul><!-- .work-filter -->
+
+                <ul class="work-grid">
+                  <li class="work-item buildings">
+                    <a href="assets/img/resized_image_6.png" title="Avenue Hotels" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_6.png" alt="Avenue Hotels">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Biblioteca educa Latina</h4>
+                        <span class="work-item-desc">Login</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item interior-design">
+                    <a href="assets/img/resized_image_7.png" title="Mark Bedroom" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_7.png" alt="Mark Bedroom">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Plataforma educa Latina</h4>
+                        <span class="work-item-desc">Login</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item buildings">
+                    <a href="assets/img/resized_image_5.png" title="Edu Hostel" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_5.png" alt="Edu Hostel">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Panel de Monitoreo</h4>
+                        <span class="work-item-desc">Dashboard</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item isolation house-renovation">
+                    <a href="assets/img/resized_image_9.png" title="Alan Home" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_9.png" alt="Alan Home">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Pagina Web</h4>
+                        <span class="work-item-desc">Chirinos</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item interior-design ">
+                    <a href="assets/img/resized_image_8.png" title="Jannet Home" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_8.png" alt="Jannet Home">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Panel Principal</h4>
+                        <span class="work-item-desc">Plataforma</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                  <li class="work-item design photography house-renovation">
+                    <a href="assets/img/resized_image_1.png" title="Papa Ron's Restaurant" class="image-lightbox">
+                      <div class="work-item-image">
+                        <img src="assets/img/resized_image_1.png" alt="Papa Ron's Restaurant">
+                      </div><!-- .work-item-image -->
+                      <div class="work-item-info">
+                        <h4 class="work-item-title">Pagina Web</h4>
+                        <span class="work-item-desc">Andabamba</span>
+                      </div><!-- .work-item-info -->
+                    </a>
+                  </li><!-- .work-item -->
+                </li><!-- .work-item -->
+                <li class="work-item house-renovation">
+                  <a href="assets/img/resized_image_4.png" title="Papa Ron's Restaurant" class="image-lightbox">
+                    <div class="work-item-image">
+                      <img src="assets/img/resized_image_4.png" alt="Papa Ron's Restaurant">
+                    </div><!-- .work-item-image -->
+                    <div class="work-item-info">
+                      <h4 class="work-item-title">Pagina Web</h4>
+                      <span class="work-item-desc">Información</span>
+                    </div><!-- .work-item-info -->
+                  </a>
+                </li><!-- .work-item -->
+              </li><!-- .work-item -->
+              <li class="work-item interior-design">
+                <a href="assets/img/resized_image_2.png" title="Papa Ron's Restaurant" class="image-lightbox">
+                  <div class="work-item-image">
+                    <img src="assets/img/resized_image_2.png" alt="Papa Ron's Restaurant">
+                  </div><!-- .work-item-image -->
+                  <div class="work-item-info">
+                    <h4 class="work-item-title">Cuadro De meritos</h4>
+                    <span class="work-item-desc">Plataforma</span>
+                  </div><!-- .work-item-info -->
+                </a>
+              </li><!-- .work-item -->
+            </li><!-- .work-item -->
+            <li class="work-item buildings">
+              <a href="assets/img/resized_image_3.png" title="Papa Ron's Restaurant" class="image-lightbox">
+                <div class="work-item-image">
+                  <img src="assets/img/resized_image_3.png" alt="Papa Ron's Restaurant">
+                </div><!-- .work-item-image -->
+                <div class="work-item-info">
+                  <h4 class="work-item-title">Reportes</h4>
+                  <span class="work-item-desc">Biblioteca</span>
+                </div><!-- .work-item-info -->
+              </a>
+            </li><!-- .work-item -->
+                </ul><!-- .work-grid -->
+              </div><!-- .entry-content -->
+            </div><!-- .col-## -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .content-section -->
+      <!-- end:content-section -->
+    </div><!-- .site-main -->
+    <!-- end:site-main -->
+
+  	<!-- begin:footer -->
+    <footer id="colophon" class="site-footer bg-black" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <img src="assets/img/LOGO_FINAL_Mesa_de_trabajo_1-removebg-preview.png" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
+              </section>
+          </div>
+
+          <div class="col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0">
+            <section class="widget">
+              <h3 class="widget-title">Empresa</h3>
+              <ul>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">inf@q10.com</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Legal</h3>
+              <ul>
+                <li><a href="#">Metal Roofting</a></li>
+                <li><a href="#">Green Building</a></li>
+                <li><a href="#">Construction Consultant</a></li>
+                <li><a href="#">Construction Management</a></li>
+                <li><a href="#">General Contracting</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Our Contact</h3>
+              <p>5252 E Walnut Ave, Orange, California, United States.</p>
+              <p>hello@construction.me<br>+62 (0) 274 441 5005</p>
+            </section>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- #colophon -->
+    <!-- end:footer -->
+
+    <!-- begin:copyright -->
+    <section id="copyright" class="copyright bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 copy-left">
+            <p>Copyright &copy; 2018 <a href="http://templatespoint.net/"><strong>TemplatesPoint</strong></a>. All Right Reserved.</p>
+          </div>
+          <div class="col-sm-6 copy-right">
+            <div class="carousel">
+              <div class="carousel-track">
+                <!-- Original flags -->
+                <img src="assets/img/Nueva carpeta/Argentina.PNG" alt="Argentina" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Belize.PNG" alt="Belize" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Bolivia.PNG" alt="Bolivia" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Brasil.PNG" alt="Brasil" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Chile.PNG" alt="Chile" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Colombia.PNG" alt="Colombia" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Costa_Rica.PNG" alt="Costa Rica" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Cuba.PNG" alt="Cuba" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Ecuador.PNG" alt="Ecuador" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/El_Salvador.PNG" alt="El Salvador" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Guatemala.PNG" alt="Guatemala" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Honduras.PNG" alt="Honduras" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/MEXICO.PNG" alt="Mexico" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Nicaragua.PNG" alt="Nicaragua" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Panama.PNG" alt="Panama" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Paraguay.PNG" alt="Paraguay" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Peru.PNG" alt="Peru" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Puerto Rico.PNG" alt="Puerto Rico" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/República Dominicana.PNG" alt="República Dominicana" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Uruguay.PNG" alt="Uruguay" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Venezuela.PNG" alt="Venezuela" class="flag-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        
+      .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 10px 0;
+      }
+      
+      .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: scroll 40s linear infinite;
+      }
+      
+      .flag-icon {
+        width: 50px;
+        height: 35px;
+        flex-shrink: 0;
+      }
+      
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-50px * 21 - 20px * 21)); /* Width of all flags + gaps */
+        }
+      }
+      
+      /* Pause animation on hover */
+      .carousel:hover .carousel-track {
+        animation-play-state: paused;
+      }
+      </style>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const flags = track.innerHTML;
+        
+        // Clone the flags and add them to create seamless loop
+        track.innerHTML = flags + flags;
+      
+        // Function to check if flags are loaded and start animation
+        function checkImagesLoaded() {
+          const images = track.querySelectorAll('img');
+          let loadedImages = 0;
+          
+          images.forEach(img => {
+            if (img.complete) {
+              loadedImages++;
+            } else {
+              img.addEventListener('load', () => {
+                loadedImages++;
+                if (loadedImages === images.length) {
+                  track.style.visibility = 'visible';
+                }
+              });
+            }
+          });
+        }
+      
+        checkImagesLoaded();
+      });
+      </script>
+    </section><!-- #copyright -->
+    <!-- begin:copyright -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/plugins/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/parallax.min.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/plugins/jquery.easing.js"></script>
+    <script src="assets/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/plugins/owl.carousel.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+  </body>
+
+</html>

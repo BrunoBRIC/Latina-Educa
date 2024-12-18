@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="construction is awesome bootstrap responsive construction business theme">
+    <meta name="keywords" content="construction, business, construction business, responsive, parallax, business theme">
+    <meta name="author" content="templateninja">
+    <title>PLataforma</title>
+
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:300,500" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/Pe-icon-7-stroke.css" rel="stylesheet">
+    <link href="assets/css/owl.carousel.css" rel="stylesheet">
+    <link href="assets/css/owl.theme.css" rel="stylesheet">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/plugins/html5shiv.min.js"></script>
+      <script src="assets/plugins/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="home">
+
+    <!-- begin:header -->
+    <div class="header header-page">
+      <!-- begin:topbar -->
+      <div id="topbar" class="topbar topbar-page">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div class="nav-utility">
+                <span class="nav-item">A stylish Bootstrap theme for construction companies</span>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-8 -->
+            <div class="col-sm-4 hidden-xs">
+              <div class="nav-utility nav-right">
+                <a href="#" class="nav-item"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-linkedin"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-pinterest"></i></a>
+                <a href="#" class="nav-item"><i class="fa fa-envelope-o"></i></a>
+              </div><!-- .nav-utility -->
+            </div><!-- .col-sm-4 -->
+          </div><!-- .row -->
+        </div><!-- .container -->
+      </div><!-- .topbar -->
+      <!-- end:topbar -->
+
+      <!-- begin:site-navigation -->
+      <div class="site-header-affix-wrapper">
+        <header id="masthead" class="site-header header-dark" role="banner">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="site-branding">
+                  <h1 class="site-title title-image"><a href="index.html" rel="home"><img src="assets/img/Captura_de_pantalla_2024-12-03_184733-removebg-preview.pn" alt="construction business" class="img-responsive"></a></h1>
+                </div><!-- .site-branding -->
+              </div><!-- .col-sm-3 -->
+
+              <div class="col-sm-9">
+                <nav id="site-navigation" class="main-navigation" role="navigation">
+                  <button class="menu-toggle" type="button" aria-controls="primary-menu" aria-expanded="false"><span class="pe-7s-menu"></span><span class="sr-only">Primary Menu</span></button>
+
+                  <div class="menu-testing-menu-container">
+                    <ul id="primary-menu" class="menu nav-menu" aria-expanded="false">
+                      <li class="menu-item current-menu-item"><a href="index.html">INICIO</a></li>
+                      
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="Nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="menu-item menu-item-has-children" aria-haspopup="true"><a href="#">SERVICIOS</a>
+                        <ul class="sub-menu">
+                          <li class="menu-item current-menu-item"><a href="Plataforma.html">PLATAFORMA</a></li>
+                          <li class="menu-item"><a href="Portal.html">PAGINA WEB</a></li>
+                          <li class="menu-item"><a href="Biblioteca.html">REPOSITORIO DE BIBLIOTECA</a></li>
+                        </ul>
+                      </li>
+                      <li class="menu-item"><a href="Partners.html">Projects</a></li>
+                      <li class="menu-item"><a href="contact.html">Contact</a></li>
+                      <li class="menu-item"><a href="blog.html">PRUEBA GRATUITA</a></li>
+                      
+                    </ul>
+                  </div>
+                </nav><!-- #site-navigation -->
+              </div><!-- .col-sm-9 -->
+            </div><!-- .row -->
+          </div><!-- .container -->
+        </header><!-- #masthead -->
+      </div><!-- .site-header-affix-wrapper -->
+      <!-- end:site-navigation -->
+    </div><!-- #header -->
+    <!-- end:header -->
+
+    <!-- begin:main-title -->
+    <style>
+      /* Reset y estilos globales */
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: 'Arial', sans-serif;
+      }
+          /* Animaciones Globales */
+          @keyframes gradientBG {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        @keyframes fadeInUp {
+            0% { transform: translateY(20px); opacity: 0; }
+            100% { transform: translateY(0); opacity: 1; }
+        }
+      /* Header Principal */
+      .main-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 40vh;
+          padding: 2rem;
+          background: linear-gradient(-45deg, #0078d7, #00a1ff, #0056b3, #80FDFF);
+          background-size: 400% 400%;
+          animation: gradientBG 15s ease infinite;
+          color: white;
+      }
+
+      .text-container {
+          max-width: 50%;
+          animation: fadeInUp 1s ease-out;
+      }
+
+      .main-header h1 {
+          font-size: 4.8rem;
+          text-shadow: 4px 4px 0px #ff4500, 8px 8px 0px #00bfff;
+          margin-bottom: 1rem;
+          margin-left: 60px;
+      }
+
+      .main-header p {
+          font-size: 1.9rem;
+          line-height: 1.6;
+          margin-bottom: 1.5rem;
+          margin-left: 60px;
+      }
+
+      .cta-button {
+          display: inline-block;
+          background: #fff;
+          color: #0078d7;
+          padding: 10px 20px;
+          border-radius: 50px;
+          font-weight: bold;
+          text-decoration: none;
+          transition: all 0.3s ease;
+      }
+
+      .cta-button:hover {
+          background: #0078d7;
+          color: white;
+          transform: translateY(-3px);
+      }
+
+      .image-container img {
+          max-width: 100%;
+          border-radius: 20px;
+          animation: float 6s ease-in-out infinite;
+          box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      }
+      /* Botones CTA */
+      .cta-button {
+          display: inline-block;
+          background-color: #80FDFF;
+          color: #00247A;
+          padding: 15px 30px;
+          border-radius: 25px;
+          text-decoration: none;
+          font-weight: bold;
+          margin-top: 20px;
+          transition: all 0.4s;
+          margin-left: 60px;
+      }
+  
+      .cta-button:hover {
+          background-color: #0078d7;
+          color: white;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      /* Secciones de características */
+      .container-5645 {
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 2rem;
+      }
+  
+      .section-5645 {
+          display: flex;
+          align-items: center;
+          margin-bottom: 3rem;
+          gap: 2rem;
+          transition: transform 0.3s ease;
+      }
+  
+      .section-5645:hover {
+          transform: translateY(-5px);
+      }
+  
+      .section-5645:nth-child(even) {
+          flex-direction: row-reverse;
+      }
+  
+      .section-5645 img {
+          width: 300px;
+          height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+      }
+  
+      .text-5645 {
+          flex: 1;
+      }
+  
+      /* Sección dinámica */
+      .dynamic-section {
+          max-width: 90%;
+          margin: 4rem auto;
+          padding: 2rem;
+          display: flex;
+          gap: 2rem;
+      }
+  
+      .options ul {
+          list-style: none;
+          width: 300px;
+      }
+  
+      .options li {
+          padding: 1rem;
+          margin-bottom: 0.5rem;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: all 0.3s ease;
+      }
+  
+      .options li:hover {
+          background-color: #e9ecef;
+      }
+  
+      .options li.active {
+          background-color: #007bff;
+          color: white;
+      }
+  
+      /* Nueva sección de precios mejorada */
+      .pricing-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px;
+          padding: 40px;
+          max-width: 100%;
+          margin: 0 auto;
+          background: #edf4fc;
+      }
+  
+      .pricing-card {
+          flex: 1;
+          max-width: 400px;
+          background: #ffffff;
+          border-radius: 15px;
+          padding: 30px;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease;
+          position: relative;
+      }
+  
+      .pricing-card:hover {
+          transform: translateY(-10px);
+      }
+  
+      .pricing-card h2 {
+          color: #1a237e;
+          font-size: 24px;
+          margin-bottom: 10px;
+      }
+  
+      .pricing-card .subtitle {
+          color: #666;
+          font-size: 14px;
+          margin-bottom: 20px;
+      }
+  
+      .pricing-card .price {
+          color: #0078d7;
+          font-size: 32px;
+          font-weight: bold;
+          margin: 20px 0;
+      }
+  
+      .pricing-card .period {
+          color: #666;
+          font-size: 14px;
+      }
+  
+      .features-list {
+          list-style: none;
+          margin: 30px 0;
+      }
+  
+      .features-list li {
+          color: #444;
+          padding: 10px 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+      }
+  
+      .features-list li::before {
+          content: "✓";
+          color: #0078d7;
+          font-weight: bold;
+      }
+  
+      .popular-tag {
+          background: #ff6b6b;
+          color: white;
+          padding: 5px 15px;
+          border-radius: 15px;
+          font-size: 12px;
+          position: absolute;
+          top: -10px;
+          right: 20px;
+      }
+  
+      /* Tabla de características */
+      .features-table {
+          max-width: 1200px;
+          margin: 4rem auto;
+          padding: 2rem;
+          overflow-x: auto;
+      }
+  
+      .features-table table {
+          width: 100%;
+          border-collapse: collapse;
+          background: white;
+          border-radius: 15px;
+          overflow: hidden;
+          box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      }
+  
+      .features-table th {
+          background: #0078d7;
+          color: white;
+          padding: 15px;
+          text-align: left;
+      }
+  
+      .features-table td {
+          padding: 15px;
+          border-bottom: 1px solid #eee;
+      }
+  
+      .features-table tr:hover {
+          background-color: #f8f9fa;
+      }
+  
+      .badge {
+          display: inline-block;
+          padding: 5px 10px;
+          border-radius: 15px;
+          font-size: 12px;
+          font-weight: bold;
+      }
+  
+      .badge-success {
+          background-color: #28a745;
+          color: white;
+      }
+  
+      .badge-danger {
+          background-color: #dc3545;
+          color: white;
+      }
+  
+      /* Animaciones */
+      @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+      }
+  
+      /* Media queries */
+      @media (max-width: 768px) {
+          .main-header {
+              flex-direction: column;
+              text-align: center;
+          }
+  
+          .main-header .text-container {
+              padding-right: 0;
+              margin-bottom: 20px;
+          }
+  
+          .pricing-container {
+              flex-direction: column;
+              align-items: center;
+          }
+  
+          .pricing-card {
+              width: 100%;
+          }
+  
+          .section-5645,
+          .section-5645:nth-child(even) {
+              flex-direction: column;
+              text-align: center;
+          }
+  
+          .dynamic-section {
+              flex-direction: column;
+          }
+  
+          .options ul {
+              width: 100%;
+          }
+      }
+      .text-5645 h3{
+          flex: 1;
+          font-size: 2.8rem;
+          padding: 19px;
+          color: #0078d7;
+      }
+
+      .text-5645 p{
+          flex: 1;
+          font-size: 1.6rem;
+          text-align: justify;
+      }
+      </style>
+
+      <header class="main-header">
+          <div class="text-container">
+              <h1>Portal web</h1>
+              <br>
+              <p>Explore las herramientas de alto nivel para optimizar la gestión de su institución educativa.</p>
+              <a href="#" class="cta-button">Prueba Gratuita</a>
+          </div>
+          <div class="image-container">
+              <img src="assets/img/image-removebg-preview (9).png" alt="Plataforma Educativa">
+          </div>
+      </header>
+  <br>  <br>
+      <div class="container-5645">
+          <div class="section-5645">
+              <img src="assets/img/image-removebg-preview (10).png" alt="Deserción y estadísticas">
+              <div class="text-5645">
+                  <h3>Desarrollo de páginas web que cumplen con los estándares del MINEDU</h3>
+                  <p>Ofrecemos el servicio de creación y optimización de páginas web institucionales que cumplen con los requisitos exigidos por el Ministerio de Educación (MINEDU) para el licenciamiento de instituciones educativas. Nuestras soluciones garantizan:</p>
+                  <p>•	Publicación de información institucional obligatoria, como reglamentos, planes de estudio, y resultados académicos.</p>
+                  <p>•	Acceso a estadísticas de matrícula y deserción, presentadas de manera clara y organizada</p>
+                  <p>•	Plataformas adaptadas a dispositivos móviles y de escritorio, cumpliendo con criterios de accesibilidad y usabilidad.</p>
+                  <p>•	Seguridad y cumplimiento normativo, alineados con las exigencias del licenciamiento.</p>
+                  </div>
+          </div>
+          <div class="section-5645">
+              <img src="assets/img/image-removebg-preview (11).png" alt="Educación virtual">
+              <div class="text-5645">
+                  <h3>Facilite la educación virtual con páginas web funcionales y dinámicas</h3>
+                  <p>Desarrollamos plataformas que permiten a las instituciones ofrecer servicios virtuales completos, con herramientas para:</p>
+                  <p>•	Acceso a contenidos académicos, bibliotecas virtuales y repositorios de documentos.</p>
+                  <p>•	Foros de participación e interacción entre docentes y estudiantes.</p>
+                  <p>•	Realización de tareas, evaluaciones y cuestionarios en línea.</p>
+                  <p>•	Reportes automatizados para cumplir con los requerimientos del MINEDU.</p>
+              </div>
+          </div>
+      </div>
+      <div class="pricing-container">
+ 
+        <div class="pricing-card">
+            <span class="popular-tag">Más Popular</span>
+            <h2>Colegios Avanzado</h2>
+            <p class="subtitle">Ideal para instituciones grandes y en crecimiento</p>
+            <div class="price">
+                S/. 2,500,000 <span class="period">/semestre</span>
+            </div>
+            <ul class="features-list">
+                <li>Diseño responsivo y adaptable</li>
+                <li>Mantenimiento y soporte 24/7</li>
+                <li>Almacenamiento ilimitado</li>
+                <li>Optimización SEO avanzada</li>
+                <li>Seguridad de alto nivel</li>
+                <li>Integración con sistemas externos</li>
+                <li>Reportes personalizados</li>
+                <li>Actualizaciones automáticas</li>
+                <li>Análisis de datos y estadísticas</li>
+            </ul>
+            <a href="#" class="cta-button">COMENZAR AHORA</a>
+        </div>
+    </div>
+      <section class="dynamic-section">
+          <div class="options">
+              <ul>
+                  <li class="active">Dashboard</li>
+                  <li>Reporte</li>
+                  <li>Configuracion</li>
+                  <li>Repositorio De Revista</li>
+                  <li>Dashboard</li>
+              </ul>
+          </div>
+
+          
+          <div class="image-container">
+              <img id="dynamicImage" src="assets/img/web.png" alt="Información Académica">
+          </div>
+      </section>
+      
+
+
+  
+      <script>
+        // Arreglo de imágenes correspondientes a cada opción
+        const images = [
+            "assets/img/web1.png",        // Imagen para Matricula
+            "assets/img/web3.png",         // Imagen para Horario
+            "assets/img/web4.png",        // Imagen para Docentes
+            "assets/img/web5.png", // Imagen para Contenido de Curso
+            "assets/img/web6.png",      // Imagen para Estudiante
+        ];
+    
+        // Selección de elementos dinámicos
+        const options = document.querySelectorAll('.options li');
+        const dynamicImage = document.getElementById('dynamicImage');
+    
+        options.forEach((option, index) => {
+            option.addEventListener('click', () => {
+                // Cambiar la clase activa
+                options.forEach(opt => opt.classList.remove('active'));
+                option.classList.add('active');
+    
+                // Cambiar la imagen
+                dynamicImage.src = images[index];
+                dynamicImage.alt = option.textContent;
+            });
+        });
+    </script>
+    <!-- end:site-main -->
+
+  	<!-- begin:footer -->
+    <footer id="colophon" class="site-footer bg-black" role="contentinfo">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <img src="assets/img/LOGO_FINAL_Mesa_de_trabajo_1-removebg-preview.png" alt="bootstrap theme for construction companies" class="img-responsive marg-20-btm marg-20-top">
+              </section>
+          </div>
+
+          <div class="col-md-2 col-sm-6 col-md-offset-1 col-sm-offset-0">
+            <section class="widget">
+              <h3 class="widget-title">Empresa</h3>
+              <ul>
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contactanos</a></li>
+                <li><a href="#">inf@q10.com</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Legal</h3>
+              <ul>
+                <li><a href="#">Metal Roofting</a></li>
+                <li><a href="#">Green Building</a></li>
+                <li><a href="#">Construction Consultant</a></li>
+                <li><a href="#">Construction Management</a></li>
+                <li><a href="#">General Contracting</a></li>
+              </ul>
+            </section>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <section class="widget">
+              <h3 class="widget-title">Our Contact</h3>
+              <p>5252 E Walnut Ave, Orange, California, United States.</p>
+              <p>hello@construction.me<br>+62 (0) 274 441 5005</p>
+            </section>
+          </div><!-- .col-## -->
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </footer><!-- #colophon -->
+    <!-- end:footer -->
+
+    <!-- begin:copyright -->
+    <section id="copyright" class="copyright bg-black">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 copy-left">
+            <p>Copyright &copy; 2018 <a href="http://templatespoint.net/"><strong>TemplatesPoint</strong></a>. All Right Reserved.</p>
+          </div>
+          <div class="col-sm-6 copy-right">
+            <div class="carousel">
+              <div class="carousel-track">
+                <!-- Original flags -->
+                <img src="assets/img/Nueva carpeta/Argentina.PNG" alt="Argentina" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Belize.PNG" alt="Belize" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Bolivia.PNG" alt="Bolivia" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Brasil.PNG" alt="Brasil" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Chile.PNG" alt="Chile" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Colombia.PNG" alt="Colombia" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Costa_Rica.PNG" alt="Costa Rica" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Cuba.PNG" alt="Cuba" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Ecuador.PNG" alt="Ecuador" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/El_Salvador.PNG" alt="El Salvador" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Guatemala.PNG" alt="Guatemala" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Honduras.PNG" alt="Honduras" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/MEXICO.PNG" alt="Mexico" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Nicaragua.PNG" alt="Nicaragua" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Panama.PNG" alt="Panama" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Paraguay.PNG" alt="Paraguay" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Peru.PNG" alt="Peru" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Puerto Rico.PNG" alt="Puerto Rico" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/República Dominicana.PNG" alt="República Dominicana" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Uruguay.PNG" alt="Uruguay" class="flag-icon">
+                <img src="assets/img/Nueva carpeta/Venezuela.PNG" alt="Venezuela" class="flag-icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        
+      .carousel {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        padding: 10px 0;
+      }
+      
+      .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: scroll 40s linear infinite;
+      }
+      
+      .flag-icon {
+        width: 50px;
+        height: 35px;
+        flex-shrink: 0;
+      }
+      
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-50px * 21 - 20px * 21)); /* Width of all flags + gaps */
+        }
+      }
+      
+      /* Pause animation on hover */
+      .carousel:hover .carousel-track {
+        animation-play-state: paused;
+      }
+      </style>
+      
+      <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const track = document.querySelector('.carousel-track');
+        const flags = track.innerHTML;
+        
+        // Clone the flags and add them to create seamless loop
+        track.innerHTML = flags + flags;
+      
+        // Function to check if flags are loaded and start animation
+        function checkImagesLoaded() {
+          const images = track.querySelectorAll('img');
+          let loadedImages = 0;
+          
+          images.forEach(img => {
+            if (img.complete) {
+              loadedImages++;
+            } else {
+              img.addEventListener('load', () => {
+                loadedImages++;
+                if (loadedImages === images.length) {
+                  track.style.visibility = 'visible';
+                }
+              });
+            }
+          });
+        }
+      
+        checkImagesLoaded();
+      });
+      </script>
+    </section><!-- #copyright -->
+    <!-- begin:copyright -->
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/plugins/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/parallax.min.js"></script>
+    <script src="assets/js/navigation.js"></script>
+    <script src="assets/plugins/jquery.easing.js"></script>
+    <script src="assets/plugins/jquery.magnific-popup.min.js"></script>
+    <script src="assets/plugins/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/plugins/isotope.pkgd.min.js"></script>
+    <script src="assets/plugins/owl.carousel.min.js"></script>
+    <script src="assets/plugins/gmap3.min.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtR223ih2ZwVJX2SGBixD3p87Aa8RV2Is"></script>
+    <script src="assets/js/map.js"></script>
+    <script src="assets/js/script.min.js"></script>
+  </body>
+
+</html>
