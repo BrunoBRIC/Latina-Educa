@@ -14,37 +14,98 @@
         }
 
         body {
-            background-color: #f5f7fa;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            position: relative;
+            background: linear-gradient(rgba(199, 195, 195, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/gratis.jpg') no-repeat center center fixed;
+            background-size: cover;
         }
 
         .trial-container {
-            background: white;
+            background: rgba(255, 255, 255, 0.95);
             border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
             width: 100%;
-            max-width: 500px;
+            max-width: 600px;
             padding: 40px;
+            transition: transform 0.3s ease;
+        }
+
+        .trial-container:hover {
+            transform: translateY(-5px);
         }
 
         .header {
             text-align: center;
             margin-bottom: 30px;
+            animation: fadeIn 1s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
         .header h1 {
             color: #1a73e8;
-            font-size: 28px;
+            font-size: 32px;
             margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .header h1::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #1a73e8;
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .header:hover h1::after {
+            transform: scaleX(1);
         }
 
         .header p {
             color: #666;
-            font-size: 16px;
+            font-size: 18px;
+        }
+
+        .benefits-section {
+            margin: 30px 0;
+            text-align: center;
+        }
+
+        .benefits-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .benefit-card {
+            background: #f8faff;
+            padding: 20px;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
 
         .features {
@@ -52,6 +113,12 @@
             padding: 20px;
             background: #f8faff;
             border-radius: 12px;
+            animation: slideIn 1s ease;
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(-20px); }
+            to { opacity: 1; transform: translateX(0); }
         }
 
         .feature-item {
@@ -59,10 +126,14 @@
             align-items: center;
             margin-bottom: 15px;
             color: #444;
+            padding: 10px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
         }
 
-        .feature-item:last-child {
-            margin-bottom: 0;
+        .feature-item:hover {
+            background: rgba(26, 115, 232, 0.1);
+            transform: translateX(10px);
         }
 
         .feature-item::before {
@@ -77,14 +148,21 @@
             border-radius: 50%;
             margin-right: 12px;
             font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover::before {
+            transform: scale(1.2);
         }
 
         .trial-form {
             margin-top: 30px;
+            animation: fadeIn 1s ease 0.5s backwards;
         }
 
         .form-group {
             margin-bottom: 20px;
+            position: relative;
         }
 
         .form-group label {
@@ -92,6 +170,11 @@
             margin-bottom: 8px;
             color: #333;
             font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .form-group:focus-within label {
+            color: #1a73e8;
         }
 
         .form-group input, .form-group select {
@@ -101,6 +184,7 @@
             border-radius: 8px;
             font-size: 15px;
             transition: all 0.3s ease;
+            background: white;
         }
 
         .form-group input:focus, .form-group select:focus {
@@ -111,7 +195,7 @@
 
         .submit-btn {
             width: 100%;
-            padding: 14px;
+            padding: 16px;
             background: #1a73e8;
             color: white;
             border: none;
@@ -120,6 +204,20 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: translate(-50%, -50%) rotate(45deg) scale(0);
+            transition: transform 0.6s ease;
         }
 
         .submit-btn:hover {
@@ -127,10 +225,8 @@
             transform: translateY(-2px);
         }
 
-        .submit-btn:disabled {
-            background: #ccc;
-            cursor: not-allowed;
-            transform: none;
+        .submit-btn:hover::after {
+            transform: translate(-50%, -50%) rotate(45deg) scale(1);
         }
 
         .terms {
@@ -138,14 +234,17 @@
             text-align: center;
             font-size: 14px;
             color: #666;
+            animation: fadeIn 1s ease 1s backwards;
         }
 
         .terms a {
             color: #1a73e8;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
 
         .terms a:hover {
+            color: #1557b0;
             text-decoration: underline;
         }
 
@@ -153,10 +252,37 @@
             display: none;
             background: #4caf50;
             color: white;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             text-align: center;
             margin-top: 20px;
+            animation: bounceIn 0.6s ease;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+
+        .testimonials {
+            margin: 30px 0;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+        }
+
+        .testimonial-card {
+            padding: 15px;
+            margin-bottom: 15px;
+            border-left: 3px solid #1a73e8;
+            transition: all 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            background: rgba(26, 115, 232, 0.05);
+            transform: translateX(5px);
         }
 
         @media (max-width: 480px) {
@@ -166,6 +292,10 @@
 
             .header h1 {
                 font-size: 24px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -177,11 +307,46 @@
             <p>Descubre todas las funciones sin compromiso</p>
         </div>
 
+        <div class="benefits-section">
+            <h2>¿Por qué elegirnos?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <h3>Fácil de usar</h3>
+                    <p>Interfaz intuitiva y amigable</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Soporte 24/7</h3>
+                    <p>Estamos aquí para ayudarte</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Datos seguros</h3>
+                    <p>Máxima seguridad garantizada</p>
+                </div>
+                <div class="benefit-card">
+                    <h3>Personalizable</h3>
+                    <p>Adapta la plataforma a tus necesidades</p>
+                </div>
+            </div>
+        </div>
+
         <div class="features">
             <div class="feature-item">Acceso completo a todas las funciones</div>
             <div class="feature-item">Soporte técnico personalizado</div>
             <div class="feature-item">Sin necesidad de tarjeta de crédito</div>
             <div class="feature-item">Cancela en cualquier momento</div>
+            <div class="feature-item">Capacitación incluida</div>
+            <div class="feature-item">Actualizaciones gratuitas</div>
+        </div>
+
+        <div class="testimonials">
+            <div class="testimonial-card">
+                <p>"Excelente plataforma, mejoró significativamente nuestro workflow."</p>
+                <small>- María García, Directora de Operaciones</small>
+            </div>
+            <div class="testimonial-card">
+                <p>"El mejor soporte técnico que hemos experimentado."</p>
+                <small>- Juan Pérez, CEO</small>
+            </div>
         </div>
 
         <form class="trial-form" id="trialForm">
@@ -210,14 +375,16 @@
                     <option value="201+">201+ empleados</option>
                 </select>
             </div>
+
             <div class="form-group">
-              <label for="size">Producto</label>
-              <select id="size" required>
-                  <option value="">Selecciona una opción</option>
-                  <option value="1-10">Bilioteca</option>
-                  <option value="11-50">Plataforma</option>
-              </select>
-          </div>
+                <label for="product">Producto</label>
+                <select id="product" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="biblioteca">Biblioteca</option>
+                    <option value="plataforma">Plataforma</option>
+                </select>
+            </div>
+
             <button type="submit" class="submit-btn">Comenzar prueba gratuita</button>
         </form>
 
@@ -269,6 +436,49 @@
             } else {
                 this.setCustomValidity('');
             }
+        });
+
+        // Animación suave para los elementos al hacer scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        });
+
+        document.querySelectorAll('.benefit-card, .feature-item, .testimonial-card').forEach(element => {
+            element.style.opacity = '0';
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(element);
+        });
+
+        // Efecto hover para las tarjetas de beneficios
+        document.querySelectorAll('.benefit-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.1)';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+                this.style.boxShadow = 'none';
+            });
+        });
+
+        // Animación para los campos del formulario
+        document.querySelectorAll('.form-group input, .form-group select').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
         });
     </script>
 </body>
